@@ -1,0 +1,42 @@
+{
+  "name": "thepose",
+  "version": "1.0.0",
+  "description": "Using Pose net lets try and turn our bodies into skeletons",
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel ./src/*.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "assets",
+        "staticOutDir": "assets"
+      }
+    ]
+  },
+  "author": "Julian Jackson",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.7.0",
+    "@parcel/transformer-webmanifest": "^2.7.0",
+    "parcel": "^2.7.0",
+    "buffer": "^6.0.3",
+    "process": "^0.11.10",
+    "@types/three": "^0.144.0",
+    "three": "^0.145.0",
+    "three-orbitcontrols": "^2.110.3",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@tensorflow-models/pose-detection": "^2.0.0",
+    "@tensorflow/tfjs-backend-webgl": "^3.21.0",
+    "@tensorflow/tfjs-converter": "^3.21.0",
+    "@tensorflow/tfjs-core": "^3.21.0",
+    "normalize.css": "^8.0.1"
+  }
+}

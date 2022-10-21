@@ -1,0 +1,7 @@
+interface CanvasInterface {
+    
+}
+
+class Canvas {
+
+}
